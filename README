@@ -1,0 +1,39 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3606
+
+Diablo3 is a color scheme inspired by molokai. It supports both gui and 256-color term.
+
+=========================================
+
+Screenshots
+
+gui: http://i.imgur.com/aANR9.png
+
+terminal (1.41) : http://i.imgur.com/eIFi5.png
+
+terminal (1.21): http://i.imgur.com/HEAKT.png
+
+=========================================
+
+Options:
+
+If you want to set long line warning, copy this in your vimrc:
+
+  let g:diablo3_longline = 1
+
+
+The default length of a line is 120, you can change it by putting
+the following in your vimrc:
+
+  let g:diablo3_len = 79
+
+Notice the length here is the length you want to set plus 1.
+
+
+Links:
+
+* Bitbucket: https://bitbucket.org/vayn/diablo3-colorscheme
+
+=========================================
+
+ BTW Diablo is my favorite game series :D
+
