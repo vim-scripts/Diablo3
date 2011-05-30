@@ -1,8 +1,22 @@
 " Vim color file
 " Name:         diablo3
 " Maintainer:   Vayn <vayn@vayn.de>
-" Last Change:  2011年 05月 29日 星期日 22:01:40 CST
+" Last Change:  2011年 05月 30日 星期一 12:52:10 CST
 " Thanks To:    lilydjwg, Tomas Restrepo (author of molokai.vim)
+" Options:
+"
+" If you want to set long line warning, copy this in your vimrc:
+"
+"   let g:diablo3_longline = 1
+"
+"
+" The default length of a line is 120, you can change it by putting
+" the following in your vimrc:
+"
+"   let g:diablo3_len = 79
+"
+" Notice the length here is the length you want to set plus 1.
+"
 "
 
 hi clear
@@ -15,6 +29,15 @@ if version > 580
   endif
 endif
 let g:colors_name="diablo3"
+
+" Error format when a line is longer than g:diablo3_longlen, default
+" length is 120.
+if exists('g:diablo3_longline') && g:diablo3_longline == 1 
+  if ! exists('g:diablo3_len')
+    let g:diablo3_len = 121
+  end
+  exe 'match LongLineWarning "\%'.g:diablo3_len.'v.*"'
+end
 
 hi Boolean         guifg=#ae81ff               gui=bold
 hi Character       guifg=#e6db74
@@ -125,7 +148,7 @@ if &t_Co > 255
   highlight DiffText        cterm=bold      ctermbg=239
 
   highlight Directory       cterm=bold                    ctermfg=112
-  highlight Error                           ctermbg=53    ctermfg=89
+  highlight Error                           ctermbg=53    ctermfg=152
   highlight ErrorMsg        cterm=bold      ctermbg=235   ctermfg=197
   highlight Exception       cterm=bold                    ctermfg=112
   highlight Float                                         ctermfg=141
@@ -198,7 +221,6 @@ if &t_Co > 255
   highlight LineNr                          ctermbg=18    ctermfg=250
   highlight NonText                         ctermbg=18    ctermfg=235
 
-  highlight LongLineWarning cterm=underline ctermbg=53    ctermfg=89
+  highlight LongLineWarning cterm=underline ctermbg=53    ctermfg=152
 end
 
-match LongLineWarning '\%121v.*' " Error format when a line is longer than 120
