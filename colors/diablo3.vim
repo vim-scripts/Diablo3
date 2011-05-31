@@ -1,7 +1,7 @@
 " Vim color file
 " Name:         diablo3
 " Maintainer:   Vayn <vayn@vayn.de>
-" Last Change:  2011年 05月 31日 星期二 16:31:20 CST
+" Last Change:  2011年 06月 01日 星期三 05:16:47 CST
 " Thanks To:    lilydjwg, Tomas Restrepo (author of molokai.vim)
 " Options:
 "
@@ -148,7 +148,7 @@ if &t_Co > 255
   highlight DiffText        cterm=bold      ctermbg=239
 
   highlight Directory       cterm=bold                    ctermfg=112
-  highlight Error                           ctermbg=53    ctermfg=152
+  highlight Error                           ctermbg=8     ctermfg=152
   highlight ErrorMsg        cterm=bold      ctermbg=235   ctermfg=197
   highlight Exception       cterm=bold                    ctermfg=112
   highlight Float                                         ctermfg=203
@@ -188,10 +188,10 @@ if &t_Co > 255
   highlight SpecialKey                                    ctermfg=245
 
   if has("spell")
-    highlight SpellBad      cterm=undercurl
-    highlight SpellCap      cterm=undercurl
-    highlight SpellLocal    cterm=undercurl
-    highlight SpellRare     cterm=undercurl
+    highlight SpellBad      cterm=bold                    ctermbg=240
+    highlight SpellCap      cterm=underline
+    highlight SpellLocal    cterm=underline
+    highlight SpellRare     cterm=underline
   endif
 
   highlight Statement       cterm=bold                    ctermfg=68
