@@ -1,8 +1,8 @@
 " Vim color file
 " Name:         diablo3
 " Maintainer:   Vayn <vayn@vayn.de>
-" Last Change:  2011年 06月 01日 星期三 05:16:47 CST
-" Thanks To:    lilydjwg, Tomas Restrepo (author of molokai.vim)
+" Last Change:  2011年 06月 14日 星期二 23:40:18 CST
+" Thanks To:    lilydjwg, Tomas Restrepo(author of molokai.vim), terremoto 
 " Options:
 "
 " If you want to set long line warning, copy this in your vimrc:
@@ -134,38 +134,39 @@ hi LongLineWarning guifg=#960050 guibg=#1e0010 gui=underline
 if &t_Co > 255
   highlight Boolean         cterm=bold                    ctermfg=141
   highlight Character                                     ctermfg=185
-  highlight Number                                        ctermfg=214
+  highlight Number                                        ctermfg=141
   highlight String                                        ctermfg=220
   highlight Conditional     cterm=bold                    ctermfg=68
-  highlight Constant        cterm=bold                    ctermfg=191
+  highlight Constant        cterm=bold                    ctermfg=148
   highlight Cursor                          ctermbg=231   ctermfg=16
   highlight Debug           cterm=bold                    ctermfg=250
   highlight Define                                        ctermfg=81
   highlight Delimiter                                     ctermfg=245
-  highlight DiffAdd                         ctermbg=23
-  highlight DiffChange                      ctermbg=239   ctermfg=245
-  highlight DiffDelete                      ctermbg=53    ctermfg=89
-  highlight DiffText        cterm=bold      ctermbg=239
+  highlight DiffAdd                         ctermbg=236
+  highlight DiffChange                      ctermbg=238   ctermfg=244
+  highlight DiffDelete                      ctermbg=232   ctermfg=89
+  highlight DiffText        cterm=bold      ctermbg=238
 
   highlight Directory       cterm=bold                    ctermfg=112
-  highlight Error                           ctermbg=8     ctermfg=152
-  highlight ErrorMsg        cterm=bold      ctermbg=235   ctermfg=197
+  highlight Error                           ctermbg=232   ctermfg=89
+  highlight ErrorMsg        cterm=bold      ctermbg=235   ctermfg=161
   highlight Exception       cterm=bold                    ctermfg=112
-  highlight Float                                         ctermfg=203
-  highlight FoldColumn                      ctermbg=239   ctermfg=252
-  highlight Folded                          ctermbg=239   ctermfg=252
+  highlight Float                                         ctermfg=141
+  highlight FoldColumn                      ctermbg=16    ctermfg=239
+  highlight Folded                          ctermbg=16    ctermfg=239
   highlight Function                                      ctermfg=154
-  highlight Identifier                                    ctermfg=208
+  highlight Identifier                                    ctermfg=172
   highlight Ignore                                        ctermfg=244
-  highlight IncSearch                       ctermbg=16    ctermfg=186
+  highlight IncSearch                       ctermbg=16    ctermfg=144
 
-  highlight Keyword         cterm=bold                    ctermfg=197
+  highlight Keyword         cterm=bold                    ctermfg=161
   highlight Label           cterm=none                    ctermfg=185
-  highlight Macro                                         ctermfg=186
-  highlight SpecialKey                                    ctermfg=191
+  highlight Macro                                         ctermfg=144
+  highlight SpecialKey                                    ctermfg=148
 
   highlight MatchParen      cterm=bold      ctermbg=208   ctermfg=16
 
+  highlight ModeMsg                                       ctermfg=185
   highlight MoreMsg                                       ctermfg=185
   highlight Operator        cterm=bold                    ctermfg=68
 
@@ -178,12 +179,12 @@ if &t_Co > 255
   highlight PreCondit       cterm=bold                    ctermfg=112
   highlight PreProc                                       ctermfg=112
   highlight Question                                      ctermfg=81
-  highlight Repeat          cterm=bold                    ctermfg=68
-  highlight Search                          ctermbg=33    ctermfg=231
+  highlight Repeat          cterm=bold                    ctermfg=161
+  highlight Search                          ctermbg=32    ctermfg=231
   " marks column
   highlight SignColumn                      ctermbg=235   ctermfg=112
-  highlight SpecialChar     cterm=bold                    ctermfg=197
-  highlight SpecialComment  cterm=bold                    ctermfg=240
+  highlight SpecialChar     cterm=bold                    ctermfg=161
+  highlight SpecialComment  cterm=bold                    ctermfg=239
   highlight Special                                       ctermfg=81
   highlight SpecialKey                                    ctermfg=245
 
@@ -195,12 +196,12 @@ if &t_Co > 255
   endif
 
   highlight Statement       cterm=bold                    ctermfg=68
-  highlight htmlStatement                                 ctermfg=67
+  highlight htmlStatement                                 ctermfg=110
   highlight StatusLine                                    ctermfg=240
   highlight StatusLineNC                    ctermbg=232   ctermfg=244
   highlight StorageClass                                  ctermfg=208
-  highlight Structure       cterm=bold                    ctermfg=226
-  highlight Tag                                           ctermfg=197
+  highlight Structure       cterm=bold                    ctermfg=81
+  highlight Tag                                           ctermfg=161
   highlight Title                                         ctermfg=209
   highlight Todo            cterm=bold      ctermbg=235   ctermfg=231
 
@@ -209,8 +210,8 @@ if &t_Co > 255
   highlight Underlined      cterm=underline               ctermfg=244
 
   highlight VertSplit       cterm=bold      ctermbg=232   ctermfg=244
-  highlight VisualNOS                       ctermbg=238
-  highlight Visual                          ctermbg=238
+  highlight VisualNOS                       ctermbg=237
+  highlight Visual                          ctermbg=237
   highlight WarningMsg      cterm=bold      ctermbg=236   ctermfg=231
   highlight WildMenu                        ctermbg=16    ctermfg=81
 
@@ -223,4 +224,3 @@ if &t_Co > 255
 
   highlight LongLineWarning cterm=underline ctermbg=53    ctermfg=1
 end
-
