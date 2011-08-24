@@ -6,11 +6,11 @@ Diablo3 is a color scheme inspired by molokai. It supports both gui and 256-colo
 
 Screenshots
 
-gui: http://i.imgur.com/aANR9.png
+gui: http://i.imgur.com/Nxl1F.png
 
-terminal (1.41) : http://i.imgur.com/eIFi5.png
+256-color term (new): http://i.imgur.com/9RwJh.png
 
-terminal (1.21): http://i.imgur.com/HEAKT.png
+256-color term (1.21): http://i.imgur.com/HEAKT.png
 
 =========================================
 
@@ -31,7 +31,7 @@ Notice the length here is the length you want to set plus 1.
 
 Links:
 
-* Bitbucket: https://bitbucket.org/vayn/diablo3-colorscheme
+* Bitbucket: https://bitbucket.org/vayn/colorschemes
 
 =========================================
 
